@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+h1, h2 {
+  font-family: 'Merriweather', serif;
+}
+
+/* Nav bar */
+nav.navbar {
+  background-color: #1f3b2e;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.brand {
+  color: #f7f7f5;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 34px;
+}
+
+nav ul li a {
+  color: #f7f7f5;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #d9a441;
+}
+
+/* Hero section */
+.hero {
+  background-color: #f2f0e9;
+  padding: 70px 20px 50px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 38px;
+  color: #1f3b2e;
+  margin-bottom: 10px;
+}
+
+.hero .tagline {
+  color: #b5822c;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.hero img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ffffff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  margin-bottom: 25px;
+}
+
+.hero p:not(.tagline) {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #555;
+  font-size: 17px;
+}
+
+/* Main content */
+main {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+section {
+  background-color: #fafaf8;
+  border: 1px solid #e8e6df;
+  border-radius: 8px;
+  padding: 30px 35px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: #1f3b2e;
+  border-bottom: 2px solid #d9a441;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0 0 0 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #1f3b2e;
+  color: #f7f7f5;
+  font-size: 14px;
+}
